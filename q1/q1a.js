@@ -1,5 +1,3 @@
-// var _ = require("http://cdnjs.cloudflare.com/ajax/libs/lodash.js/2.4.1/lodash.js");
-
 var people = [
   {
     name: 'Bob',
@@ -43,6 +41,3 @@ function awesomeAvg(people) {
 
 awesomeAvg(people);
 display();
-
-// constructor to add new people
-// call to recalculate average when a new person is added

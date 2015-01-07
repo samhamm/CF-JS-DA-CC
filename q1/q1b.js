@@ -46,7 +46,3 @@ function awesomeAvg(people) {
 
 awesomeAvg(people);
 display();
-
-// constructor to add new people
-// call to recalculate average when a new person is added
-// display current people in the list
