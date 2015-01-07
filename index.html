@@ -11,35 +11,43 @@
   <body>
 
     <h1>Code Fellows: Code Challenge for JavaScript Development Accelerator</h1>
-    <h1><a href="mailto:samhamm@gmail.com">Sam Hamm</a></h1>
-    <h1>January 2015</h1>
+    <h1><a href="mailto:samhamm@gmail.com">Sam Hamm</a>, January 2015</h1>
+
+    <h3>Home •
+        <a href="q1/index.html">Question 1</a> •
+        <a href="q2/index.html">Question 2</a> •
+        <a href="q3/index.html">Question 3</a>
+    </h3>
 
     <img src="img/cf.png">
-    <h2><a href="q1">Question 1: Awesomeness Function</a></h2>
-      <p>Write a function that takes an array of data in the below format. Assume that this function is run in a browser. It should update a 'p' tag with id="awesome-index" with the average awesome-index of all programmers. Your solution should continue to work even if more people are added to the array. Write two versions, one using lodash (or underscore) and jQuery, and one using only Javascript utilities native to the browser.</p>
+    <h2><a href="q1/index.html">Question 1: Awesomeness Function</a></h2>
+      <p>Write a function that takes an array of data in the below format. Assume that this function is run in a browser. It should update a &lt;p&gt; tag with id="awesome-index" with the average awesome-index of all programmers. Your solution should continue to work even if more people are added to the array. Write two versions, one using lodash (or underscore) and jQuery, and one using only Javascript utilities native to the browser.</p>
 
-        <p id="code">{
-          name: 'Bob',
-          occupation: 'programmer',
-          awesome_index: 34,
-        },
-        {
-          name: 'Alice',
-          occupation: 'programmer',
-          awesome_index: 26,
-        },
-        {
-          name: 'Zaphod',
-          occupation: 'President of the Galaxy',
-          awesome_index: 10
-        }</p>
+      <p><pre class="code">
+        [
+          {
+            name: 'Bob',
+            occupation: 'programmer',
+            awesome_index: 34,
+          },
+          {
+            name: 'Alice',
+            occupation: 'programmer',
+            awesome_index: 26,
+          },
+          {
+            name: 'Zaphod',
+            occupation: 'President of the Galaxy',
+            awesome_index: 10
+          }
+        ]</pre></p>
 
     <img src="img/cf.png">
-    <h2><a href="q2">Question 2: Node.js Server</a></h2>
+    <h2><a href="q2/index.html">Question 2: Node.js Server</a></h2>
       <p>Create a simple http server using node. This server should respond to a root-url request with a file called index.html. Do not use ExpressJS. Your code should have error checking and at least one callback. Put five or more html elements in your index.html. One of the elements should be a link to an external page. Things to research: node.js, callbacks, the fs module, the http module.</p>
 
     <img src="img/cf.png">
-    <h2><a href="q3">Question 3: Create a Library!</a></h2>
+    <h2><a href="q3/index.html">Question 3: Create a Library!</a></h2>
       <p>Model a library using objects. A library contains shelves. Shelves contain books. Books have an author and a title. Give the library methods to add and remove a shelf. A shelf should have methods to add/remove a book. Use a modular approach so that each type of object is contained in its own file. Add any functionality you think appropriate.</p>
 
     <script src="js.js"></script>
