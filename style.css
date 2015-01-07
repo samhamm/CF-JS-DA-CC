@@ -28,3 +28,23 @@ h3 {
   margin-right: 20%;
   text-align: left;
 }
+
+.solution-big {
+  color: green;
+  font-family: Helvetica, sans-serif;
+  font-size: 3em;
+  font-weight: bold;
+}
+
+.solution-header {
+  color: green;
+  font-family: Helvetica, sans-serif;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+.solution-text {
+  color: green;
+  font-family: Helvetica, sans-serif;
+  font-size: 1em;
+}
