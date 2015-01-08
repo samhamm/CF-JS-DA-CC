@@ -20,6 +20,11 @@ h3 {
   font-size: 1.0em;
 }
 
+.action {
+  color: red;
+  font-weight: bold;
+}
+
 .code {
   background: #CECECE;
   font-family: monospace;
@@ -27,6 +32,10 @@ h3 {
   margin-left: 20%;
   margin-right: 20%;
   text-align: left;
+}
+
+#library {
+  background-color: #D8D8D8;
 }
 
 .solution-big {
