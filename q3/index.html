@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Sam Hamm • CF.JS.DA.CC • January 2015</title>
     <link href="../style.css" rel="stylesheet">
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/lodash.js/2.4.1/lodash.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
   </head>
 
   <body>
@@ -30,59 +32,72 @@
     <div id="library">
       <h1>CODE FELLOWS LIBRARY</h1>
 
+      <div id="list" class="shelf">
+        <h3>List of All Books in Library System</h3>
+        <button id="booksByAuthor">List Books By Author</button>
+        <button id="booksByTitle">List Books By Title</button>
+        <button id="hideContentsList">Hide Contents</button>
+        <p id="all-books"></p>
+      </div>
+
       <div id="shelf1" class="shelf">
-        <h3>Shelf 1: Dev Books by Code Fellows Faculty</h3>
+        <h3>Shelf 1: Dev Books by Code Fellows Faculty <button id="showShelf1">Show Books</button> <button id="hideShelf1">Hide Books</button></h3>
         <p id="dev"></p>
       </div>
 
       <div id="shelf2" class="shelf">
-        <h3>Shelf 2: Selected Menus from SLU Vendors</h3>
-        <p id="menus" class="shelf"></p>
+        <h3>Shelf 2: Selected Books On SLU Cuisine <button id="showShelf2">Show Books</button> <button id="hideShelf2">Hide Books</button></h3>
+        <p id="cuisine" class="shelf"></p>
       </div>
 
       <div id="shelf3" class="shelf">
-        <h3>Shelf 3: All About Beards</h3>
+        <h3>Shelf 3: All About Beards <button id="showShelf3">Show Books</button> <button id="hideShelf3">Hide Books</button></h3>
         <p id="beards" class="shelf"></p>
       </div>
 
       <div id="checked-out" class="shelf">
         <h3>Books That Are Currently Checked Out</h3>
         <p id="checked-out" class="shelf"></p>
-      <div>
+      </div>
 
       <div id="removed shelves">
-        <h3>Shelves That Are Currently Removed</h3>
-        <p id="checked-out" class="shelf"></p>
-      <div>
+        <h3>Shelves That Are Currently Removed for Maintenance</h3>
+        <p id="removed-shelves" class="shelf"></p>
+      </div>
+
+      <img src="../img/cf-gray.png">
 
       <div id="actions">
-        <h3>ACTIONS</h3>
-        <p id="add-shelf" class="action">Add A Shelf</p>
-        Enter the number of the shelf to add:
-        <input type="text" name="shelfToAdd">
-        <p id="remove-shelf" class="action">Remove A Shelf</p>
-        Enter the number of the shelf to remove:
-        <input type="text" name="shelfToRemove">
-        <p id="add-book" class="action">Add A Book</p>
-        Enter the call number of the book to add:
-        <input type="text" name="bookToAdd">
-        <p id="remove-book" class="action">Remove A Book</p>
-        Enter the call number of the book to remove:
-        <input type="text" name="bookToRemove">
-      <div>
+        <h3 class="action">LIBRARIAN ACTIONS</h3>
+
+        <p id="remove-shelf" class="action">Remove A Shelf for Maintenance (Hide)
+          <button id="remove1">Shelf 1</button>
+          <button id="remove2">Shelf 2</button>
+          <button id="remove3">Shelf 3</button>
+        </p>
+
+        <p id="add-shelf" class="action">Return A Shelf from Maintenance (Show)
+          <button id="return1">Shelf 1</button>
+          <button id="return2">Shelf 2</button>
+          <button id="return3">Shelf 3</button>
+        </p>
+
+
+      </div>
 
     </div>
 
-    <h3><a href="../index.html">Home</a> •
+    <nav>
+      <img src="../img/cf.png">
+
+      <h3><a href="../index.html">Home</a> •
       <a href="../q1/index.html">Question 1</a> •
       <a href="../q2/q2.html">Question 2</a> •
       Question 3
-    </h3>
+      </h3>
+    </nav>
 
     <img src="../img/cf.png">
-
-    <script src="http://cdnjs.cloudflare.com/ajax/libs/lodash.js/2.4.1/lodash.js"></script>
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 
     <script src="books.js"></script>
     <script src="shelves.js"></script>
