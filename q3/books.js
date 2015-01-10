@@ -1,86 +1,21 @@
-// var books = [
-//   {
-//     author: 'Quark, Mel',
-//     title: 'JavaScratch: Programming for Kittens',
-//     category: 'dev',
-//     callNum: 'Q.1',
-//     status: 'in'
-//   },
-//   {
-//     author: 'Ewing, Cris',
-//     title: 'The Insatiable Python',
-//     category: 'dev',
-//     callNum: 'E.1',
-//     status: 'in'
-//   },
-//   {
-//     author: 'Riggio, Brook',
-//     title: 'Maritime Navigation: Rails for Sails',
-//     category: 'dev',
-//     callNum: 'R.1',
-//     status: 'in'
-//   },
-//   {
-//     author: 'Sande, Dale',
-//     title: 'You Can All Kiss My Sass',
-//     category: 'dev',
-//     callNum: 'S.1',
-//     status: 'in'
-//   },
-//   {
-//     author: 'D-Jung',
-//     title: 'Trucking It Thai-Style',
-//     category: 'menus',
-//     callNum: 'D.1',
-//     status: 'in'
-//   },
-//   {
-//     author: 'Top Pot',
-//     title: 'Donuts Are Like Palindromes',
-//     category: 'menus',
-//     callNum: 'T.1',
-//     status: 'in'
-//   },
-//   {
-//     author: 'Berliner Döner',
-//     title: 'Kebabs for Flavor and Profit',
-//     category: 'menus',
-//     callNum: 'B.1',
-//     status: 'in'
-//   },
-//   {
-//     author: 'Starbucks',
-//     title: 'Burnt Coffee',
-//     category: 'menus',
-//     callNum: 'S.2',
-//     status: 'in'
-//   },
-//   {
-//     author: 'Storck, Ivan',
-//     title: 'Thick and Full',
-//     category: 'beards',
-//     callNum: 'S.3',
-//     status: 'in'
-//   },
-//   {
-//     author: 'Ewing, Cris',
-//     title: 'Trim and Tight',
-//     category: 'beards',
-//     callNum: 'E.2',
-//     status: 'in'
-//   },
-//   {
-//     author: 'Morgan, Tyler',
-//     title: 'The Emo Lumberjack',
-//     category: 'beards',
-//     callNum: 'M.1',
-//     status: 'in'
-//   },
-//   {
-//     author: 'Hamm, Sam',
-//     title: 'Escargoatee: Beard-Trapped Gourmet',
-//     category: 'beards',
-//     callNum: 'H.1',
-//     status: 'in'
-//   },
-// ];
+function Book(author, title, category, status, callNumber){
+  this.author = author;
+  this.title = title;
+  this.category = category;
+  this.status = status;
+  this.callNumber = callNumber;
+}
+
+var qua1 = new Book('Quark, Mel', '"JavaScratch: Code for Kittens"', 'programming', 'loaned', 'QUA1');
+var ewi1 = new Book('Ewing, Cris', '"The Insatiable Python"', 'programming', 'shelved', 'EWI1');
+var rig1 = new Book('Riggio, Brook', '"Maritime Navigation: Rails for Sails"', 'programming', 'shelved', 'RIG1');
+var dju1 = new Book('D-Jung', '"Trucking It Thai-Style"', 'cuisine', 'shelved', 'DJU1');
+var top1 = new Book('Top Pot', '"Donuts Are Like Palindromes"', 'cuisine', 'loaned', 'TOP1');
+var ber1 = new Book('Berliner Döner', '"Flatbread for Flavor and Profit"', 'cuisine', 'shelved', 'BER1');
+var sta1 = new Book('Starbucks', '"Burnt Coffee"', 'cuisine', 'shelved', 'STA1');
+var sto1 = new Book('Storck, Ivan', '"Thick and Full"', 'beards', 'shelved', 'STO1');
+var ewi2 = new Book('Ewing, Cris', '"Trim and Tight"', 'beards', 'shelved', 'EWI1');
+var mor1 = new Book('Morgan, Tyler', '"The Emo Lumberjack"', 'beards', 'loaned', 'MOR1');
+var ham1 = new Book('Hamm, Sam', '"Escargoatee: My Beard-Trapped Gourmet"', 'beards', 'shelved', 'HAM1');
+
+var books = [ber1, dju1, ewi1, ewi2, ham1, mor1, qua1, rig1, sta1, sto1, top1];
