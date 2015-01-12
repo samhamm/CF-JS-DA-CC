@@ -1,7 +1,7 @@
-# CF-JS-DA-CC
-# Sam Hamm
-# January 2015
-# https://sam-hamm-js-code-challenge.herokuapp.com
+## CF-JS-DA-CC
+## Sam Hamm
+## January 2015
+### https://sam-hamm-js-code-challenge.herokuapp.com
 
 Files for the code challenge for the Code Fellows JavaScript Development Accelerator
 
