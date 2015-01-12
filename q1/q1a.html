@@ -22,9 +22,10 @@
     </h3>
 
     <img src="../img/cf.png">
-    <h2>Solution 1a: Awesomeness Function, Using New-Fangled Technologies</h2>
+    <h2>Solution 1a: Awesomeness Function, Using lodash and jQuery</h2>
 
     <p class="solution-text"><a href="q1a.js">The JS code for this solution is here.</a>
+    <h3><a href="q1b.html">Solution to 1b, which uses only native JavaScript, is here.</a></h3>
 
     <p class="solution-header">The following people are being evaluated:</p>
     <p id="ppl-list" class="solution-text"></p>
@@ -39,6 +40,18 @@
         awesome_index: 33,
       });
       display();</pre>
+
+      <p class="solution-text">Here's one with a non-programmer being added, which leaves the Awesome Index unchanged:</p>
+
+    <pre class="code">
+      people.push({
+        name: 'Vincent Vega',
+        occupation: 'gangster',
+        awesome_index: 666,
+      });
+      display();</pre>
+
+    <img src="../img/cf.png">
 
     <script src="q1a.js"></script>
   </body>

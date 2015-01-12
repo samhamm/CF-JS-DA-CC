@@ -22,9 +22,10 @@
     </h3>
 
     <img src="../img/cf.png">
-    <h2>Solution 1b: Awesomeness Function, Old School</h2>
 
+    <h2>Solution 1b: Awesomeness Function, Old School Native JavaScript</h2>
     <p class="solution-text"><a href="q1b.js">The JS code for this solution is here.</a>
+    <h3><a href="q1a.html">Question 1a, which uses lodash and jQuery, is here.</a></h3>
 
     <p class="solution-header">The following people are being evaluated:</p>
     <p id="ppl-list" class="solution-text"></p>
@@ -32,12 +33,25 @@
     <p id="awesome-index" class="solution-big"></p>
 
     <p class="solution-text">To test adding people to the array, copy/paste the following into the JavaScript console:</p>
-    <pre class="code">people.push({
-      name: 'Ivan',
-      occupation: 'programmer',
-      awesome_index: 83,
-    });
-    display();</pre>
+    <pre class="code">
+      people.push({
+        name: 'Ivan',
+        occupation: 'programmer',
+        awesome_index: 86,
+      });
+      display();</pre>
+
+      <p class="solution-text">Here's one with a non-programmer being added, which leaves the Awesome Index unchanged:</p>
+
+    <pre class="code">
+      people.push({
+        name: 'Toonces',
+        occupation: 'driving cat',
+        awesome_index: 237,
+      });
+      display();</pre>
+
+    <img src="../img/cf.png">
 
     <script src="q1b.js"></script>
   </body>
