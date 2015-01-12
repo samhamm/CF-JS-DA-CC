@@ -13,7 +13,7 @@ http.createServer(function(req, res) { //all of this below returns the new web s
   fs.exists(filename, function(exists) { // tests whether a path exists in the file system
     if(!exists) { // if the filepath does not exist... 404!!!
       res.writeHead(404, {"Content-Type": "text/plain"});
-      res.write("404: There Ain't Nothin' Here, Y'all.\n");
+      res.write("404: There Ain't Nothin' Here, Y'all!\n");
       res.end();
       return;
     }
@@ -36,9 +36,6 @@ http.createServer(function(req, res) { //all of this below returns the new web s
       res.end();
     });
   });
-// }).listen(parseInt(port, 10));
 }).listen(process.env.PORT || 3000);
 
 console.log("Static file server running at\n  => http://localhost:" + port + "/\nCTRL + C to shutdown");
-
-// http.createServer().listen(process.env.PORT || 3000);

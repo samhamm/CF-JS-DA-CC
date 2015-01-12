@@ -96,18 +96,6 @@ function listAllByTitle(books) {
 
   // LIBRARIAN ACTIONS
 
-    // IN/OUT
-
-    // function checkInBook(books) {
-    //     var toCheckIn = this.callNumber;
-    //     console.log(toCheckIn);
-    //   // toCheckIn.status = "shelved";
-    //   // bookStatus(books);
-    // }
-
-
-    // SHELVES
-
     $("#removeShelf1").click(function() {
       $("#shelf1").hide();
     });

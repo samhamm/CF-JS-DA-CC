@@ -1,15 +1,13 @@
 {
-  "name": "simple-site",
-  "version": "0.0.0",
+  "name": "sam-hamm-js-code-challenge",
+  "version": "0.1.0",
   "repository": {
     "type": "git",
-    "url": "https://github.com/samhamm/simple-site"
+    "url": "https://github.com/samhamm/CF-JS-DA-CC"
   },
-  "description": "Example Site for JS FII Workshop",
+  "description": "Responses to code challenge for Code Fellows JavaScript Development Accelerator",
   "dependencies": {
-    "express": "^4.10.6",
     "http": "0.0.0",
-    "sqlite3": "^3.0.4"
   },
   "devDependencies": {}
 }
