@@ -41,6 +41,8 @@ function awesomeAvg(people) {
       progs++;
       total += people.awesome_index;
       average = total / progs;
+    } else {
+      console.log(people[i].name + " is not a programmer, and does not affect the Awesome Index of programmers.");
     }
   });
   average = Math.round(average * 100) / 100;
