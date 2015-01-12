@@ -36,7 +36,7 @@
         <h3>List of All Books in Library System</h3>
         <button id="booksByAuthor">List Books By Author</button>
         <button id="booksByTitle">List Books By Title</button>
-        <button id="hideContentsList">Hide Contents</button>
+        <button id="concealContentsList">Hide Contents</button>
         <p id="all-books"></p>
       </div>
 
@@ -56,7 +56,7 @@
       </div>
 
       <div id="out-shelf" class="shelf">
-        <h3>Books That Are Currently Checked Out (category)</h3>
+        <h3>Books That Are Currently Checked Out (category) (call number)</h3>
         <p id="checked-out" class="shelf"></p>
       </div>
 
@@ -65,16 +65,30 @@
       <div id="actions">
         <h3 class="action">LIBRARIAN ACTIONS</h3>
 
-        <p id="remove-shelf" class="action">Remove A Shelf for Maintenance (Hide)
-          <button id="remove1">Shelf 1</button>
-          <button id="remove2">Shelf 2</button>
-          <button id="remove3">Shelf 3</button>
+<!--         <p id="checkout-book" class="action">Check Out A Book:
+          <form class="action">
+            Call Number:<input type="text" name="toCheckOut" size="8">
+            <button id="outBook">Check Out</button>
+          </form>
         </p>
 
-        <p id="add-shelf" class="action">Return A Shelf from Maintenance (Show)
-          <button id="return1">Shelf 1</button>
-          <button id="return2">Shelf 2</button>
-          <button id="return3">Shelf 3</button>
+         <p id="checkin-book" class="action">Check In A Book:
+          <form class="action">
+            Call Number:<input type="text" name="toCheckIn" size="8">
+            <button id="inBook">Check In</button>
+          </form>
+        </p> -->
+
+        <p id="remove-shelf" class="action">Remove A Shelf for Maintenance (Hide It From View)
+          <button id="removeShelf1">Shelf 1</button>
+          <button id="removeShelf2">Shelf 2</button>
+          <button id="removeShelf3">Shelf 3</button>
+        </p>
+
+        <p id="add-shelf" class="action">Return A Shelf from Maintenance (Show It On Screen)
+          <button id="returnShelf1">Shelf 1</button>
+          <button id="returnShelf2">Shelf 2</button>
+          <button id="returnShelf3">Shelf 3</button>
         </p>
       </div>
     </div>

@@ -59,3 +59,9 @@ h3 {
   font-family: Helvetica, sans-serif;
   font-size: 1em;
 }
+
+#sources {
+  background-color:#CECECE;
+  margin-left:10%;
+  margin-right:10%;
+}

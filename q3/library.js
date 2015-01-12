@@ -1,3 +1,14 @@
+function bookStatus(books) {
+  _.forEach(books, function(books) {
+    if (books.status === "loaned") {
+      loanedBooks.push(books.title + " by " + books.author + " (" + books.category + ")" + " (" + books.callNumber + ")" + "<br>");
+    }
+  });
+  $(function() {
+    $("#checked-out").html(loanedBooks);
+  });
+}
+
 bookStatus(books);
 
 function listAllByAuthor(books) {
@@ -28,7 +39,7 @@ function listAllByTitle(books) {
 
 // ACTIONS
 
-  // LIST
+  // DISPLAY HOLDINGS LIST
 
     $("#booksByAuthor").click(function() {
       $("#all-books").html(listAllByAuthor(books));
@@ -38,11 +49,11 @@ function listAllByTitle(books) {
       $("#all-books").html(listAllByTitle(books));
     });
 
-    $("#hideContentsList").click(function() {
+    $("#concealContentsList").click(function() {
       $("#all-books").html("");
     });
 
-    // SHELF 1
+    // SHELF 1 - DISPLAY BOOKS
 
     $("#hideShelf1").click(function() {
       $("#dev").html("");
@@ -52,7 +63,7 @@ function listAllByTitle(books) {
       $("#dev").html(shelf1(books));
     });
 
-    // SHELF 2
+    // SHELF 2 - DISPLAY BOOKS
 
     $("#hideShelf2").click(function() {
       $("#cuisine").html("");
@@ -62,7 +73,7 @@ function listAllByTitle(books) {
       $("#cuisine").html(shelf2(books));
     });
 
-    //SHELF 3
+    //SHELF 3 - DISPLAY BOOKS
 
     $("#hideShelf3").click(function() {
       $("#beards").html("");
@@ -74,26 +85,38 @@ function listAllByTitle(books) {
 
   // LIBRARIAN ACTIONS
 
-    $("#remove1").click(function() {
+    // IN/OUT
+
+    // function checkInBook(books) {
+    //     var toCheckIn = this.callNumber;
+    //     console.log(toCheckIn);
+    //   // toCheckIn.status = "shelved";
+    //   // bookStatus(books);
+    // }
+
+
+    // SHELVES
+
+    $("#removeShelf1").click(function() {
       $("#shelf1").hide();
     });
 
-    $("#return1").click(function() {
+    $("#returnShelf1").click(function() {
       $("#shelf1").show();
     });
 
-    $("#remove2").click(function() {
+    $("#removeShelf2").click(function() {
       $("#shelf2").hide();
     });
 
-    $("#return2").click(function() {
+    $("#returnShelf2").click(function() {
       $("#shelf2").show();
     });
 
-    $("#remove3").click(function() {
+    $("#removeShelf3").click(function() {
       $("#shelf3").hide();
     });
 
-    $("#return3").click(function() {
+    $("#returnShelf3").click(function() {
       $("#shelf3").show();
     });
