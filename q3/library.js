@@ -1,9 +1,20 @@
+// library.js
+// Sam Hamm
+// Code Fellows JavaScript Code Challenge
+// January 2015
+
+var loanedBooks = [];
+
 function bookStatus(books) {
+  loanedBooks = [];
   _.forEach(books, function(books) {
     if (books.status === "loaned") {
-      loanedBooks.push(books.title + " by " + books.author + " (" + books.category + ")" + " (" + books.callNumber + ")" + "<br>");
+      loanedBooks.push('<input type="button" value="Check In" onclick="' + books.callNumber + '.checkThisIn()"> ' + books.title + ' by ' + books.author + '<br>');
     }
   });
+  shelf1(books);
+  shelf2(books);
+  shelf3(books);
   $(function() {
     $("#checked-out").html(loanedBooks);
   });
