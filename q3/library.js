@@ -9,7 +9,7 @@ function bookStatus(books) {
   loanedBooks = [];
   _.forEach(books, function(books) {
     if (books.status === "loaned") {
-      loanedBooks.push('<input type="button" value="Check In" onclick="' + books.callNumber + '.checkThisIn()"> ' + books.title + ' by ' + books.author + '<br>');
+      loanedBooks.push('<input type="button" value="Check In" onclick="' + books.callNumber + '.checkThisIn()"> ' + books.title + ' by ' + books.author + " (" + books.category + ")" + '<br>');
     }
   });
   shelf1(books);
