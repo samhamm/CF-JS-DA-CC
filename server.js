@@ -5,6 +5,11 @@ var http = require("http"), // easy use of Node's HTTP API
     port = process.argv[2] || 3000; //process.argv = array of command line arguments
 
 http.createServer(function(req, res) { //all of this below returns the new web server object
+    if (path.normalize(decodeURI(req.url)) !== decodeURI(req.url)) {
+        res.statusCode = 403;
+        res.end();
+        return;
+    }
 
   var uri = url.parse(req.url).pathname //takes the URL string and returns an object
     , filename = path.join(process.cwd(), uri); // joins args into a normalized path
